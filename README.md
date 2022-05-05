@@ -1,8 +1,6 @@
 ----------------------------------------------------------------------------------
 AnyKernel3 - Flashable Zip Template for Kernel Releases with Ramdisk Modifications
-----------------------------------------------------------------------------------
-### by osm0sis @ xda-developers ###
-
+--------------------------------------------------------------------------------
 "AnyKernel is a template for an update.zip that can apply any kernel to any ROM, regardless of ramdisk." - Koush
 
 AnyKernel2 pushed the format further by allowing kernel developers to modify the underlying ramdisk for kernel feature support easily using a number of included command methods along with properties and variables to customize the installation experience to their kernel. AnyKernel3 adds the power of topjohnwu's magiskboot for wider format support by default, and to automatically detect and retain Magisk root by patching the new Image.*-dtb as Magisk would.
@@ -165,14 +163,6 @@ ___If running into trouble when flashing an AK3 zip, the suffix -debugging may b
 ## // Staying Up-To-Date ##
 
 Now that you've got a ready zip for your device, you might be wondering how to keep it up-to-date with the latest AnyKernel commits. AnyKernel2 and AnyKernel3 have been painstakingly developed to allow you to just drop in the latest update-binary and tools directory and have everything "just work" for beginners not overly git or script savvy, but the best practice way is as follows:
-
-1. Fork my AnyKernel3 repo on GitHub
-
-2. `git clone https://github.com/<yourname>/AnyKernel3`
-
-3. `git remote add upstream https://github.com/osm0sis/AnyKernel3`
-
-4. `git checkout -b <devicename>`
 
 5. Set it up like your <devicename> zip (i.e. remove any folders you don't use like ramdisk or patch, delete README.md, and add your anykernel.sh and optionally your Image.*-dtb if you want it up there) then commit all those changes
 
